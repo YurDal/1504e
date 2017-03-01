@@ -62,7 +62,7 @@ for k=1:N % slinga kommer att köras N-gångar, varje gång tar exakt Ts-sekunder
         u(k)=255;
     end
     % skriva ut styrvärdet
-    analogWrite(a, u(k), 'DAC0'); %DAC-utgång
+    a.analogWrite(u(k)); %DAC-utgång
     %a.analogWrite(200); %DAC-utgång
     
     %online-plot
