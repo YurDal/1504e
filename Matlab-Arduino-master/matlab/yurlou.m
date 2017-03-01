@@ -1,4 +1,4 @@
-function [e, u, y1, y2, t]=vm_stomme(a, N, Ts, v)
+function [e, u, y1, y2, t]=yurlou(a, N, Ts, v)
 % Stomme för regulator-block. Kan användas för att lägga till och anpassa till olika
 % klassiska, tidsdiskreta regulatorer
 % Argument (anpassas efter ändamål)
@@ -18,6 +18,8 @@ e=zeros(1, N);
 u=zeros(1, N);
 y1=zeros(1, N);
 y2=zeros(1, N);
+
+yf1=zeros(1, N);
 
 t=zeros(1,N);
 start=0; elapsed=0; ok=0; % används för att upptäcka för korta samplingstider
@@ -66,7 +68,7 @@ for k=1:N % slinga kommer att köras N-gångar, varje gång tar exakt Ts-sekunder
     %a.analogWrite(200); %DAC-utgång
     
     %online-plot
-    plot(t,y2,'k-',t,u,'m',t,e,'b:');
+    plot(t,y1,'k-',t,u,'m',t,e,'b:');
     
     elapsed=cputime-start; % räknar åtgången tid i sekunder
     ok=(Ts-elapsed); % sparar tidsmarginalen i ok
@@ -80,9 +82,9 @@ end % slut av samplingarna -----------------------------------------------------
 windowSize = 11;
 b = (1/windowSize)*ones(1,windowSize)
 a = 1;
-y = filter(b,a,y2);
+y = filter(b,a,y1);
 
-plot(t,y2,'g-',t,u,'m');
+plot(t,y1,'g-',t,u,'m');
 hold on;
 plot(t,y,'k-',t,u,'m');
 xlabel('samples k')
