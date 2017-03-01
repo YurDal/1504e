@@ -1,0 +1,8 @@
+windowSize = 11;
+b = (1/windowSize)*ones(1,windowSize)
+a = 1;
+y = filter(b,a,y2);
+plot(t,y2,'g-',t,u,'m');
+xlabel('samples k')
+ylabel('y, u')
+title('STEGSVAR: Nedre tank')

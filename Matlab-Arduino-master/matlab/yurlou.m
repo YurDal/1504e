@@ -19,8 +19,6 @@ u=zeros(1, N);
 y1=zeros(1, N);
 y2=zeros(1, N);
 
-yf1=zeros(1, N);
-
 t=zeros(1,N);
 start=0; elapsed=0; ok=0; % används för att upptäcka för korta samplingstider
 k=0; % samplingsindex
@@ -46,7 +44,6 @@ for k=1:N % slinga kommer att köras N-gångar, varje gång tar exakt Ts-sekunder
     t(k)=k;
     
     % läs ingångsvärde sensorvärden
-    %y(k)= analogRead(a, 'A0');
     y1(k)= analogRead(a, 'A0'); % mät ärvärdet
     y2(k)= analogRead(a, 'A1'); % mät ärvärdet
     
@@ -55,13 +52,21 @@ for k=1:N % slinga kommer att köras N-gångar, varje gång tar exakt Ts-sekunder
     
     % Regulatorblock
     % beräkna styrvärdet, t.ex p-regulator med förstärkning Kp=1
+    if e(k) <= 0
+        u(k) = 0;
+    else
+        u(k) = 200;
+    end
+    
     %u(k)=e(k); % p-regulator, Kp=1
-    u(k) = 50;
+
     % begränsa styrvärdet till lämpliga värden, vattenmodellen t.ex. u >=0 och u <255, samt
     %      heltal
-    % u(k)=min(max(0,round(u(k)), 255));
     if u(k)> 255
         u(k)=255;
+    end
+    if u(k) < 0
+        u(k) = 0;
     end
     % skriva ut styrvärdet
     analogWrite(a, u(k), 'DAC0'); %DAC-utgång
@@ -77,20 +82,12 @@ for k=1:N % slinga kommer att köras N-gångar, varje gång tar exakt Ts-sekunder
 end % slut av samplingarna ----------------------------------------------------------------------
 
 % plotta en fin slutbild,
-%plot(t,y,'k-',t,u,'m',t,e,'b:');
+plot(t,y1,'k-',t,u,'m',t,e,'b:');
 
-windowSize = 11;
-b = (1/windowSize)*ones(1,windowSize)
-a = 1;
-y = filter(b,a,y1);
-
-plot(t,y1,'g-',t,u,'m');
-hold on;
-plot(t,y,'k-',t,u,'m');
 xlabel('samples k')
 ylabel('y, u')
-title('STEGSVAR: Nedre tank')
-legend('Data in', 'Styrsignaal', 'Data filtrerad')
+title('2-lägesreglering: Övre tank')
+legend('Data in', 'Styrsignal', 'Fel-signal')
 
 % -------------------------------------------------------------------------------------------
 

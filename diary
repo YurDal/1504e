@@ -1,0 +1,366 @@
+[e, u, y1, y2, t]=vm_stomme(a, 500, 0.8, 800)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com/analogWrite')" style="font-weight:bold">arduino_com/analogWrite</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vm_stomme', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m', 65)" style="font-weight:bold">vm_stomme</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m',65,0)">line 65</a>)
+    analogWrite(a, u(k), 'DAC0'); %DAC-utgng
+} 
+clear
+a=arduino_com('COM5')
+Attempting connection .............
+Connection successful!
+
+a = 
+
+Connected to COM5 port
+ 
+[e, u, y1, y2, t]=vm_stomme(a, 500, 0.8, 800)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com/analogWrite')" style="font-weight:bold">arduino_com/analogWrite</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vm_stomme', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m', 65)" style="font-weight:bold">vm_stomme</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m',65,0)">line 65</a>)
+    analogWrite(a, u(k), 'DAC0'); %DAC-utgng
+} 
+clear
+arduino_com
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com', 'C:\Users\yurdaer\Documents\MATLAB\arduino_com.m', 30)" style="font-weight:bold">arduino_com</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Documents\MATLAB\arduino_com.m',30,0)">line 30</a>)
+Wrong number of arguments!
+} 
+a=arduino_com('COM5')
+Attempting connection .............
+Connection successful!
+
+a = 
+
+Connected to COM5 port
+ 
+[e, u, y1, y2, t]=vm_stomme(a, 500, 0.8, 800)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com/analogWrite')" style="font-weight:bold">arduino_com/analogWrite</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vm_stomme', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m', 65)" style="font-weight:bold">vm_stomme</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m',65,0)">line 65</a>)
+    analogWrite(a, u(k), 'DAC0'); %DAC-utgng
+} 
+opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m',65,0)
+matlab.internal.language.introspective.errorDocCallback('arduino_com/analogWrite')
+uiopen('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',1)
+clear
+a=arduino_com('COM5')
+Attempting connection .............
+Connection successful!
+
+a = 
+
+Connected to COM5 port
+ 
+[e, u, y1, y2, t]=yurlou(a, 500, 0.8, 800)
+{Undefined function or variable 'yurlou'.
+} 
+yurlou
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m', 17)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',17,0)">line 17</a>)
+e=zeros(1, N);
+} 
+[e, u, y1, y2, t]=yurlou(a, 500, 0.8, 800)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com/analogWrite')" style="font-weight:bold">arduino_com/analogWrite</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m', 67)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',67,0)">line 67</a>)
+    analogWrite(a, u(k), 'DAC0'); %DAC-utgng
+} 
+vm_stomme
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vm_stomme', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m', 17)" style="font-weight:bold">vm_stomme</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m',17,0)">line 17</a>)
+e=zeros(1, N);
+} 
+a=arduino_com('COM5')
+The port COM5 is already used by MATLAB
+If you are sure that the board is connected to COM5
+then delete the object, execute:
+  delete(instrfind({'Port'},{'COM5'}))
+to delete the port, disconnect the cable, reconnect it,
+and then create a new arduino object
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com', 'C:\Users\yurdaer\Documents\MATLAB\arduino_com.m', 54)" style="font-weight:bold">arduino_com</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Documents\MATLAB\arduino_com.m',54,0)">line 54</a>)
+Port COM5 already used by MATLAB
+} 
+clear
+arduino_com
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com', 'C:\Users\yurdaer\Documents\MATLAB\arduino_com.m', 30)" style="font-weight:bold">arduino_com</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Documents\MATLAB\arduino_com.m',30,0)">line 30</a>)
+Wrong number of arguments!
+} 
+arduino_com
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com', 'C:\Users\yurdaer\Documents\MATLAB\arduino_com.m', 30)" style="font-weight:bold">arduino_com</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Documents\MATLAB\arduino_com.m',30,0)">line 30</a>)
+Wrong number of arguments!
+} 
+a=arduino_com('COM5')
+Attempting connection .............
+Connection successful!
+
+a = 
+
+Connected to COM5 port
+ 
+[e, u, y1, y2, t]=yurlou(a, 500, 0.8, 800)
+{Undefined function or variable 'yurlou'.
+} 
+[e, u, y1, y2, t]=yurlou(a, 500, 0.8, 800)
+{Undefined function or variable 'yurlou'.
+} 
+yurlou
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m', 17)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',17,0)">line 17</a>)
+e=zeros(1, N);
+} 
+[e, u, y1, y2, t]=yurlou(a, 500, 0.8, 800)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com/analogWrite')" style="font-weight:bold">arduino_com/analogWrite</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m', 67)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',67,0)">line 67</a>)
+    analogWrite(a, u(k), 'DAC0'); %DAC-utgng
+} 
+clear
+a=arduino_com('COM5')
+Attempting connection .............
+Connection successful!
+
+a = 
+
+Connected to COM5 port
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[e, u, y1, y2, t]=yurlou(a, 500, 0.8, 800)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com/analogWrite')" style="font-weight:bold">arduino_com/analogWrite</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m', 67)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',67,0)">line 67</a>)
+    analogWrite(a, u(k), 'DAC0'); %DAC-utgng
+} 
+opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',67,0)
+yurlou
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m', 17)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',17,0)">line 17</a>)
+e=zeros(1, N);
+} 
+yurlou
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m', 17)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',17,0)">line 17</a>)
+e=zeros(1, N);
+} 
+arduino_com('COM5')
+The port COM5 is already used by MATLAB
+If you are sure that the board is connected to COM5
+then delete the object, execute:
+  delete(instrfind({'Port'},{'COM5'}))
+to delete the port, disconnect the cable, reconnect it,
+and then create a new arduino object
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arduino_com', 'C:\Users\yurdaer\Documents\MATLAB\arduino_com.m', 54)" style="font-weight:bold">arduino_com</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Documents\MATLAB\arduino_com.m',54,0)">line 54</a>)
+Port COM5 already used by MATLAB
+} 
+test
+
+b =
+
+    0.1250    0.1250    0.1250    0.1250    0.1250    0.1250    0.1250    0.1250
+
+test
+
+b =
+
+    0.1250    0.1250    0.1250    0.1250    0.1250    0.1250    0.1250    0.1250
+
+save(savefile,'yf1', 'yf2')
+uiimport('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\stegsvar.mat',1)
+save(savefile,'y1', 'y2', 'yf1', 'yf2')
+uiimport('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\stegsvar.mat',1)
+yurlou(a, 500, 0.8, 800)
+{Undefined function 'analogRead' for input arguments of type 'double'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\yurlou.m', 35)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\yurlou.m',35,0)">line 35</a>)
+analogRead(a, 'A0');
+} 
+vm_stomme(a, 500, 0.8, 800)
+{Undefined function 'analogRead' for input arguments of type 'double'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vm_stomme', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m', 33)" style="font-weight:bold">vm_stomme</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\vm_stomme.m',33,0)">line 33</a>)
+analogRead(a, 'A0');
+} 
+yurlou(a, 500, 0.8, 800)
+{Undefined function 'analogRead' for input arguments of type 'double'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\yurlou.m', 35)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\yurlou.m',35,0)">line 35</a>)
+analogRead(a, 'A0');
+} 
+yurlou(a, 500, 0.8, 800)
+{Undefined function or variable 'analogRead'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m', 33)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',33,0)">line 33</a>)
+analogRead(a, 'A0');
+} 
+yurlou(a, 500, 0.8, 800)
+{Undefined function or variable 'analogRead'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m', 33)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\Matlab-Arduino-master\matlab\yurlou.m',33,0)">line 33</a>)
+analogRead(a, 'A0');
+} 
+clear
+a=arduino_com('COM5')
+Attempting connection .............
+Connection successful!
+
+a = 
+
+Connected to COM5 port
+ 
+clear
+yurlou
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\yurlou.m', 17)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\yurlou.m',17,0)">line 17</a>)
+e=zeros(1, N);
+} 
+a=arduino_com('COM5')
+Attempting connection .............
+Connection successful!
+
+a = 
+
+Connected to COM5 port
+ 
+yurlou(a, 500, 0.8, 800)
+
+ans =
+
+  Columns 1 through 22
+
+   779   780   777   772   751   724   695   670   641   614   588   561   534   508   482   454   417   395   372   350   331   305
+
+  Columns 23 through 44
+
+   281   261   238   218   193   171   143   122   103    84    51   -14   -35   -36   -33   -33   -16    24    52    43    23   -37
+
+  Columns 45 through 66
+
+   -38   -39   -37   -37   -36   -21    -6    40    61    44    14   -36   -39   -39   -36   -36   -31     2    12     6   -31   -38
+
+  Columns 67 through 88
+
+   -38   -37   -37   -27     1    44    16   -30   -36   -38   -36   -32   -20     7    52    44    -6   -36   -37   -35   -33    -9
+
+  Columns 89 through 110
+
+    30    49    50    -6   -34   -35   -36   -26     1    38    35   -23   -37   -38   -37   -34   -25    25    37    39   -23   -37
+
+  Columns 111 through 132
+
+   -36   -36   -32     2    26    22   -33   -36   -38   -37   -36   -28    -9    39    59    52    23   -36   -40   -39   -38   -36
+
+  Columns 133 through 154
+
+   -36   -23    11    53    46   -10   -37   -38   -34   -32   -10    22    47    47    26   -34   -38   -38   -38   -37   -34   -28
+
+  Columns 155 through 176
+
+    -6    45    54    57     7   -33   -39   -38   -37   -36   -27   -15    25    57    44   -11   -34   -36   -34   -28   -16    40
+
+  Columns 177 through 198
+
+    59    50    24   -36   -38   -39   -38   -37   -33   -27    14    45    30   -13   -37   -34   -36   -28   -18    37    52    45
+
+  Columns 199 through 220
+
+     1   -34   -38   -39   -37   -37   -33   -22    27    38    45   -16   -35   -36   -36   -27   -17    33    53    43     3   -36
+
+  Columns 221 through 242
+
+   -38   -40   -38   -36   -34   -29    12    41    38   -24   -38   -38   -37   -29   -20    31    51    43   -17   -36   -36   -36
+
+  Columns 243 through 264
+
+   -27   -19    30    51    42    29   -36   -40   -39   -37   -38   -32   -17    17    48    33   -22   -35   -38   -36   -33   -17
+
+  Columns 265 through 286
+
+    28    45    31   -15   -36   -37   -34   -23    13    42     8   -31   -38   -38   -36   -35   -27    11    41    31    -4   -37
+
+  Columns 287 through 308
+
+   -35   -35   -33   -13    33    53    35   -11   -37   -35   -34   -29   -15    34    56    43    28   -34   -39   -39   -37   -35
+
+  Columns 309 through 330
+
+   -33   -14    11    54    44    -3   -37   -35   -35   -27   -17    38    53    42    25   -36   -39   -39   -39   -37   -34   -21
+
+  Columns 331 through 352
+
+    27    41    40   -17   -36   -34   -33   -30   -24    37    56    32   -13   -37   -34   -34   -24   -14    31    55    44     0
+
+  Columns 353 through 374
+
+   -36   -37   -35   -19    23    48    31   -23   -36   -36   -35   -33   -18    23    48    38   -11   -35   -36   -32   -33   -22
+
+  Columns 375 through 396
+
+    27    57    48    24   -36   -39   -37   -38   -36   -35   -29    -6    46    52    57    37   -33   -37   -38   -37   -36   -30
+
+  Columns 397 through 418
+
+     1    17    28   -29   -37   -38   -36   -36   -21    20    33    33   -20   -37   -38   -37   -31   -27    24    44    26   -24
+
+  Columns 419 through 440
+
+   -36   -37   -37   -33   -21    18    47    32    -7   -35   -36   -34   -30   -18    25    48    43    28   -33   -38   -37   -39
+
+  Columns 441 through 462
+
+   -36   -34   -26    22    45    41   -25   -36   -38   -36   -34   -22    16    51    35    -1   -37   -38   -36   -34   -22    15
+
+  Columns 463 through 484
+
+    54    34   -17   -35   -36   -35   -25     1    42    33   -25   -38   -38   -38   -36   -23    -7    28    50    47    33   -35
+
+  Columns 485 through 500
+
+   -39   -39   -38   -37   -30   -25    30    42    48     6   -37   -40   -39   -39   -38   -34
+
+yurlou(a, 500, 0.8, 800)
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yurlou', 'C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\yurlou.m', 85)" style="font-weight:bold">yurlou</a> (<a href="matlab: opentoline('C:\Users\yurdaer\Dropbox\MAH\2017-vår\Inbgyggda System och signaler\Reglerteknik\1504e\yurlou.m',85,0)">line 85</a>)
+} 
+analogWrite(a,0, 'DAC0');
+yurlou(a, 150, 0.8, 800)
+
+ans =
+
+  Columns 1 through 22
+
+   784   783   776   762   732   697   665   634   592   569   536   508   473   420   396   368   349   320   295   263   241   209
+
+  Columns 23 through 44
+
+   185   156   126    95    75    67    46    36   -14   -22   -26   -28   -16    4
