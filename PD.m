@@ -1,4 +1,4 @@
-function [e, u, y1, y2, t]=yurlou(a, N, Ts, v)
+function [e, u, y1, y2, t]=PD(a, N, Ts, v)
 % Stomme för regulator-block. Kan användas för att lägga till och anpassa till olika
 % klassiska, tidsdiskreta regulatorer
 % Argument (anpassas efter ändamål)
@@ -15,13 +15,16 @@ function [e, u, y1, y2, t]=yurlou(a, N, Ts, v)
 
 % Initialisering av variablerna ---------------------------------------------------------------
 e=zeros(1, N);
+vv=zeros(1, N);
 u=zeros(1, N);
 y1=zeros(1, N);
 y2=zeros(1, N);
-
 t=zeros(1,N);
 start=0; elapsed=0; ok=0; % används för att upptäcka för korta samplingstider
 k=0; % samplingsindex
+for j=1:N
+    vv(j)=v;
+end
 
 % Konfigurering av in- och utgångar -----------------------------------------------------
 % Arduino ingångar
@@ -52,18 +55,12 @@ for k=1:N % slinga kommer att köras N-gångar, varje gång tar exakt Ts-sekunder
     
     % Regulatorblock
     % beräkna styrvärdet, t.ex p-regulator med förstärkning Kp=1
-    %if e(k) > 100
-      %  u(k) = 255;
-    %else if e(k) <= 0
-       % u(k) = 0;
-       % else if e(k) < 100 && e(k) > 0
-             %   u(k) = 125;
-           % end
-       % end
-    %end
-
-    u(k)=e(k); % p-regulator, Kp=1
-
+    if(k==1)
+        u(k)= 1*(e(k)+(1/Ts)*e(k));
+    else
+        
+        u(k)= 1*(e(k)+(1/Ts)*(e(k)-e(k-1))); % PID-regulator, Kp=1, Td=1, Ti=100, Ts=0.8s
+    end
     % begränsa styrvärdet till lämpliga värden, vattenmodellen t.ex. u >=0 och u <255, samt
     %      heltal
     if u(k)> 255
@@ -73,9 +70,9 @@ for k=1:N % slinga kommer att köras N-gångar, varje gång tar exakt Ts-sekunder
         u(k) = 0;
     end
     % skriva ut styrvärdet
-    analogWrite(a, u(k), 'DAC0'); %DAC-utgång    
+    analogWrite(a, u(k), 'DAC0'); %DAC-utgång
     %online-plot
-    plot(t,y1,'k-',t,u,'m',t,e,'b:',t,v,'r--');
+    plot(t,y1,'k',t,y2,'y',t,u,'m',t,e,'b:');
     elapsed=cputime-start; % räknar åtgången tid i sekunder
     ok=(Ts-elapsed); % sparar tidsmarginalen i ok
     
@@ -83,11 +80,14 @@ for k=1:N % slinga kommer att köras N-gångar, varje gång tar exakt Ts-sekunder
 end % slut av samplingarna ----------------------------------------------------------------------
 
 % plotta en fin slutbild,
-plot(t,y1,'k-',t,u,'m',t,e,'b:',t,v,'r--');
+plot(t,y1,'k',t,y2,'y',t,u,'m',t,e,'b:');
+hold on
+plot(t,vv,'r--')
 xlabel('samples k')
 ylabel('y, u')
-title('fler-ägesreglering: Övre tank')
-legend('Data in', 'Styrsignal', 'Fel-signal','Börvärde')
-
+title('PD-reglering')
+legend('Övre tank','Nedre tank', 'Styrsignal', 'Fel-signal','Börvärde');
+savefile=('PD.mat')
+save(savefile,'y1', 'y2', 'e', 'u')
 % -------------------------------------------------------------------------------------------
 
