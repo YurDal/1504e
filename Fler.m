@@ -62,8 +62,11 @@ for k=1:N % slinga kommer att köras N-gångar, varje gång tar exakt Ts-sekunder
         u(k) = 255;
     else if e(k) <= 0
             u(k) = 0;
-        else if e(k) < 100 && e(k) > 0
-                u(k) = 125;
+        else if e(k) < 100 && e(k)>50
+                u(k) = 150;
+            else if e(k) < 50
+                    u(k) = 80;
+                end
             end
         end
     end

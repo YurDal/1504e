@@ -1,5 +1,5 @@
-t=[1:450]
- aa = zeros(1,450);
+t=[1:450];
+%  aa = zeros(1,450);
 % s = 449;
 % A = zeros(449, 2);
 % R = zeros(1, 2);
@@ -15,21 +15,71 @@ t=[1:450]
 % b=R(2,1)
 % 
 % G1=tf([b],[1 -a],1)
-% step(G2,450)
-for k=1:450
-    aa(k)= sim1(k+1,1);
-end
-plot (t,aa)
+% s = 449;
+% for k = 2:450
+%     y(s) = yf2(k);
+%     A(k-1, 1) = yf2(s);
+%     A(k-1, 2) = 50;
+%     s = s - 1;
+% end
+% Y=y';
+% R = A\Y;
+% a=R(1,1)
+% b=R(2,1)
+% 
+% G2=tf([b],[1 -a],1)
+% 
+%  sim22=step(G1*G2,1500)
+
+
+
+
+
+
+
+
+% for k=1:450
+%     aa(k)= sim2(k+1,1);
+% end
+% aa
+% plot (t,aa)
+% hold on
+% plot (t,1/8.8*y2)
+% xlabel('samples k')
+% ylabel('Amplitut')
+% title('Sammansatta graf - nedre vattentank')
+% legend('Simulation', 'Mätvärde');
+
+
+% C.1.5 Jämför verkliga stegsvaret för övre tanken 
+% plot(t, step_var*28.5);
+% hold on
+% plot (t,yf1);
+% hold on
+% for k=1:450
+%     yfsim(k)= sim1(k+1,1);
+% end
+% plot (t,yfsim*49.5);
+% hold on
+% xlabel('samples k')
+% ylabel('Amplitut')
+% title('Sammansatta graf - övre vattentank')
+% legend('Simulation', 'Mätvärde', 'blacbox');
+
+% C.1.6 Jämför verkliga stegsvaret för hela vattentankenmodell  
+plot(t, step_var2*22.5);
 hold on
-plot (t,1/50*y1)
+plot (t,yf2);
+hold on
+for k=1:450
+    yfsim(k)= sim22(k+1,1);
+end
+plot (t,yfsim*8.6);
+hold on
 xlabel('samples k')
 ylabel('Amplitut')
-title('Sammansatta graf - övre vattentank')
-legend('Simulation', 'Mätvärde');
-
-
-
-
+title('Sammansatta graf - Hela vattentank')
+legend('Simulation', 'Mätvärde', 'blacbox');
 
 
 
